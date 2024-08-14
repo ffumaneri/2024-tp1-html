@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <a href="../index.html">
+        <h1>⬅️ Volver atras</h1>
+    </a>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="tipo_flor">Tipo de Flor:</label>
+        <select id="tipo_flor" name="tipo_flor" required>
+            <option value="">Selecciona una flor</option>
+            <option value="rosas">Rosas</option>
+            <option value="lirios">Lirios</option>
+            <option value="girasoles">Girasoles</option>
+            <option value="margaritas">Margaritas</option>
+            <option value="orquideas">Orquídeas</option>
+            <option value="tulipanes">Tulipanes</option>
+        </select><br><br>
+
+        <label for="descripcion_pedido">Descripción del Pedido:</label><br>
+        <textarea id="descripcion_pedido" name="descripcion_pedido" rows="4" cols="50"
+            placeholder="Detalles de tu pedido..." required></textarea><br><br>
+        <button>Enviar</button>
+    </form>
+</body>
+
+</html>

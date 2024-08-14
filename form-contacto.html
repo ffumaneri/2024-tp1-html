@@ -15,7 +15,7 @@
     </header>
     <main>
       <h1>Formulario de Contacto</h1>
-      <form action="">
+      <form id="formulario-contacto">
         <div>
           <label for="nombre">Nombre</label>
           <input type="text" id="nombre" />
@@ -25,18 +25,17 @@
           <input type="text" id="apellido" />
         </div>
         <div>
-          <label for="tipo">Tipo de planta</label>
-          <select id="tipo" id="">
-            <option value="">flor1</option>
-            <option value="">flor2</option>
-            <option value="">flor3</option>
-          </select>
+          <label for="select-tipo">Tipo de planta</label>
+          <select id="select-tipo"></select>
         </div>
         <div>
           <label for="descripcion">Descripción del pedido</label>
-          <textarea id="descripcion" id=""></textarea>
+          <textarea id="descripcion"></textarea>
         </div>
+        <button type="submit">Enviar</button>
       </form>
     </main>
   </body>
+  <script src="./js/plantas.js" type="module"></script>
+  <script src="./js/form-contacto.js" type="module"></script>
 </html>

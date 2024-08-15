@@ -7,9 +7,10 @@
     </head>
     <body>
         <a href="/index.html">Volver</a>
+        
         <h2>Ingrese los datos</h2>
 
-        <form id="forma" action="/index.html" target="_self">
+        <form id="forma">
 
             <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" name="nombre" maxlength="15" required autofocus><br>
@@ -21,7 +22,7 @@
             <select name="flores" id="flores">
                 <option value="campanilla">Campanilla</option>
                 <option value="azafran">Azafran</option>
-                <option value="azalea">Azafran</option>
+                <option value="azalea">azalea</option>
                 <option value="jazmin" selected>Jazmin</option>
                 <option value="hortensia">Hortensia</option>
             </select><br>
@@ -29,7 +30,8 @@
             <label for="descripcion">Descripción:</label><br>
             <textarea name="descripcion" id="descripcion" cols="40" rows="20">Descripción del pedido</textarea><br>
             
-            <input type="submit">
+            <button onclick="guardar()">Realizar pedido</button>
         </form>
+        <script src="/js/app.js"></script>
     </body>
 </html>

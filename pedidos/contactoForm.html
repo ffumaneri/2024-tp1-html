@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Realice su pedido</title>
+    </head>
+    <body>
+        <a href="/index.html">Volver</a>
+        <h2>Ingrese los datos</h2>
+
+        <form id="forma" action="/index.html" target="_self">
+
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" maxlength="15" required autofocus><br>
+
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" maxlength="15" required><br>
+
+            <label for="flores">Flor:</label><br>
+            <select name="flores" id="flores">
+                <option value="campanilla">Campanilla</option>
+                <option value="azafran">Azafran</option>
+                <option value="azalea">Azafran</option>
+                <option value="jazmin" selected>Jazmin</option>
+                <option value="hortensia">Hortensia</option>
+            </select><br>
+
+            <label for="descripcion">Descripción:</label><br>
+            <textarea name="descripcion" id="descripcion" cols="40" rows="20">Descripción del pedido</textarea><br>
+            
+            <input type="submit">
+        </form>
+    </body>
+</html>

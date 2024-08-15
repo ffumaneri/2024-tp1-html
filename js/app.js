@@ -1,31 +1,35 @@
 function guardar(){
-    document.getElementById('forma').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        const id = document.getElementById('nombre').value;
+
         const nombre = document.getElementById('nombre').value;
         const apellido = document.getElementById('apellido').value;
         const flor = document.getElementById('flores').value;
         const desc = document.getElementById('descripcion').value;
-        
-        const pedido = {
-            nombre: nombre,
-            apellido: apellido,
-            flor: flor,
-            id: id,
-            desc: desc
-        };
-        
-        let pedidos = JSON.parse(localStorage.getItem('pedidos')) || [];
-        
-        pedidos.push(pedido);
-        
-        localStorage.setItem('pedidos', JSON.stringify(pedidos));
-        
-        document.getElementById('forma').reset();
-        
-        alert('Pedido guardado con éxito.');
-    });
+        if(nombre==="" || apellido===""){
+            alert("Rellene los campos");
+            document.getElementById('forma').reset();
+        }
+        else{
+            const nuevoPedido = new pedido(nombre, apellido, flor ,desc);
+            
+            let pedidos = JSON.parse(localStorage.getItem('pedidos')) || [];
+            
+            pedidos.push(nuevoPedido);
+            
+            localStorage.setItem('pedidos', JSON.stringify(pedidos));
+            
+            document.getElementById('forma').reset();
+            
+            alert('Pedido guardado con éxito.');
+            console.log("pedido guardado");
+            window.location.href = "/index.html";
+        }
+}
+
+function limpiarPedidos(){
+    localStorage.clear();
+    const tabla = document.getElementById('tabla');
+    tabla.innerHTML="";
+    agregarPedidos();
 }
 
 function agregarPedidos(){

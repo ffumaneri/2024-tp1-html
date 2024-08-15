@@ -1,3 +1,10 @@
+function contarId(){
+    const guardados = JSON.parse(localStorage.getItem('pedidos')) || [];
+    if(guardados.length>0) id = guardados[guardados.length-1].id;
+    else id=0;
+    return id;
+}
+
 function guardar(){
 
         const nombre = document.getElementById('nombre').value;
@@ -9,7 +16,8 @@ function guardar(){
             document.getElementById('forma').reset();
         }
         else{
-            const nuevoPedido = new pedido(nombre, apellido, flor ,desc);
+            id=contarId();
+            const nuevoPedido = new Pedido(++id,nombre, apellido, flor ,desc);
             
             let pedidos = JSON.parse(localStorage.getItem('pedidos')) || [];
             

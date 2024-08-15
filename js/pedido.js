@@ -1,7 +1,7 @@
-class pedido{
-    static count = 0;
-    constructor(nombre, apellido, flor, desc){
-        this.id = ++pedido.count;
+class Pedido{
+    static contador = 0;
+    constructor(id, nombre, apellido, flor, desc){
+        this.id = id;
         this.nombre=nombre;
         this.apellido=apellido;
         this.flor=flor;

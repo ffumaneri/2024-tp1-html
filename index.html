@@ -6,10 +6,22 @@
     <title>Mi Floreria</title>
     <link rel="icon" href="./public/flower-icon.png" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
+        <a href="#" id="page-logo"
+          ><img
+            style="height: 3rem; width: 3rem; object-fit: contain"
+            src="./public/flower-icon.png"
+            alt="Home"
+        /></a>
         <a href="./pedidos.html">Pedidos</a>
         <a href="./form-contacto.html">Contacto</a>
       </nav>
@@ -17,56 +29,70 @@
     <main>
       <section id="presentacion">
         <h1>Mi Floreria</h1>
-        <p>
-          Bienvenido a Mi Floreria, tu destino en línea para las flores más
-          frescas y hermosas. Ofrecemos una amplia selección de arreglos
-          florales, ramos y flores sueltas para cada ocasión. Ya sea que busques
-          un regalo especial, flores para decorar tu hogar, o arreglos para
-          eventos, en Mi Floreria encontrarás lo que necesitas. Nos enorgullece
-          ofrecerte flores de la más alta calidad, seleccionadas cuidadosamente
-          y preparadas con amor por nuestros expertos floristas. Con nuestra
-          tienda en línea, puedes explorar y comprar desde la comodidad de tu
-          hogar, y recibir tus flores directamente en tu puerta.
+        <p id="descripcion-floreria">
+          <b>
+            Bienvenido a Mi Floreria, tu destino en línea para las flores más
+            frescas y hermosas.
+          </b>
+          Ofrecemos una amplia selección de arreglos florales, ramos y flores
+          sueltas para cada ocasión. Ya sea que busques un regalo especial,
+          flores para decorar tu hogar, o arreglos para eventos, en Mi Floreria
+          encontrarás lo que necesitas. Nos enorgullece ofrecerte flores de la
+          más alta calidad, seleccionadas cuidadosamente y preparadas con amor
+          por nuestros expertos floristas. Con nuestra tienda en línea, puedes
+          explorar y comprar desde la comodidad de tu hogar, y recibir tus
+          flores directamente en tu puerta.
         </p>
       </section>
 
       <section id="galeria">
-        <div>
-          <div><img src="./assets/flor1.png" alt="" /></div>
-          <div><img src="./assets/flor2.png" alt="" /></div>
-          <div><img src="./assets/flor3.png" alt="" /></div>
+        <div class="galeria__grid">
+          <div class="galeria__item">
+            <img src="./assets/flor1.png" alt="" />
+          </div>
+          <div class="galeria__item">
+            <img src="./assets/flor2.png" alt="" />
+          </div>
+          <div class="galeria__item">
+            <img src="./assets/flor3.png" alt="" />
+          </div>
         </div>
       </section>
-
       <section id="flores-mas-vendidas">
         <h2>Flores más vendidas</h2>
-        <div>
+        <div class="flores-mas-vendidas__container">
           <a href="./planta-detalles.html?id=1">
-            <article>
-              <div><p>Violetas africanas (Saintpaulia)</p></div>
-              <div class="planta-mas-vendida__imagen">
+            <article class="tarjeta-flor">
+              <div class="tarjeta-flor__p">
+                <p>Violetas africanas (Saintpaulia)</p>
+              </div>
+              <div class="tarjeta-flor__img">
                 <img src="./assets/saintpaulia.png" alt="" />
               </div>
             </article>
           </a>
           <a href="./planta-detalles.html?id=2"
-            ><article class="planta-mas-vendida">
-              <div><p>Cunas de Moisés (Spathiphyllum)</p></div>
-              <div class="planta-mas-vendida__imagen">
+            ><article class="tarjeta-flor">
+              <div class="tarjeta-flor__p">
+                <p>Cunas de Moisés (Spathiphyllum)</p>
+              </div>
+              <div class="tarjeta-flor__img">
                 <img src="./assets/spathiphyllum.png" alt="" />
               </div></article
           ></a>
           <a href="./planta-detalles.html?id=3"
-            ><article>
-              <div><p>Dieffenbachia</p></div>
-              <div class="planta-mas-vendida__imagen">
+            ><article class="tarjeta-flor">
+              <div class="tarjeta-flor__p"><p>Dieffenbachia</p></div>
+              <div class="tarjeta-flor__img">
                 <img src="./assets/dieffenbachia.png" alt="" />
               </div></article
           ></a>
         </div>
       </section>
     </main>
-
-    <footer>Mi Floreria &copy; (0343) 32332333 - floreria@flor.com.ar</footer>
+    <footer>
+      Mi Floreria - Juan Pablo Michelli &copy; (0343) 32332333
+      - floreria@flor.com.ar
+    </footer>
   </body>
 </html>

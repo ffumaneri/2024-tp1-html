@@ -1,0 +1,222 @@
+:root{
+    --primary-color: #5D784D;
+    --background-color: #c4f7a4;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1024px;
+    background-color: white;
+    padding: 2rem 6rem 4rem;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    color: var(--primary-color);
+}
+
+header{
+    border-bottom: 1px solid var(--primary-color);
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+h1,h2,p,a,a:visited{
+    color: var(--primary-color);
+}
+
+h1{
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#descripcion-floreria{
+    text-align: center;
+    margin: 2rem auto 0;
+    width: 60%;
+    text-align: justify;
+}
+
+a{
+    text-decoration: none;
+    transition: font-weight 0.3s ease;
+
+}
+
+a#page-logo{
+    margin-right: auto;
+}
+
+a:hover{
+    font-weight: 600;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+section{
+    margin: 4rem 0;
+}
+
+.galeria__grid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(100px,300px);
+}
+
+.galeria__item img{
+    border-radius: 2rem;
+}
+
+.galeria__item:last-child{
+    grid-column: 1/3;
+}
+
+.flores-mas-vendidas__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.tarjeta-flor{
+    display: flex;
+    border: 1px solid var(--primary-color);
+    flex-direction: column;
+    max-width: 200px;
+    border-radius: 2rem;
+    height: 300px;
+    padding: 1rem;
+    overflow: hidden;
+    transition: border-width 0.2s ease;    
+}
+
+.tarjeta-flor:hover{
+    border-width: 2px;
+}
+
+.tarjeta-flor:hover .tarjeta-flor__img{
+    transform: scale(1.05);
+}
+
+.tarjeta-flor__p{
+    text-align: center;
+}
+
+.tarjeta-flor__img{
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-flor__img img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+#planta-detalles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#descripcion-planta{
+    text-align: justify;
+}
+
+#imagen-planta{
+    width: auto;
+    max-height: 400px;
+}
+
+#planta-detalles,#pedidos, #form-contacto, #formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#formulario-contacto{
+    color: var(--primary-color);
+    font-weight: 600;
+    align-items: flex-start;
+    border: 1px solid var(--primary-color);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+#formulario-contacto>div{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+#formulario-contacto>button{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    color: var(--primary-color);
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    font-weight: 500;
+    margin-left: auto;
+    
+}
+
+#formulario-contacto input, #formulario-contacto textarea, #formulario-contacto select{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+#formulario-contacto>button:hover{
+    background-color: #a2e678;
+}
+
+td,th{
+    padding: 1rem;
+}
+
+footer{
+    position: sticky;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

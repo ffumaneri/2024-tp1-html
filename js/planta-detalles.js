@@ -7,7 +7,7 @@ const plantaSeleccionada = plantas.find((planta) => planta.id === idPlanta);
 if (plantaSeleccionada) {
   document.getElementById("nombre-planta").innerText =
     plantaSeleccionada.nombre;
-  document.getElementById("descripcion-planta").innerText =
+  document.getElementById("descripcion-planta").innerHTML =
     plantaSeleccionada.descripcion;
   document.getElementById("imagen-planta").src = plantaSeleccionada.imagen;
 } else {

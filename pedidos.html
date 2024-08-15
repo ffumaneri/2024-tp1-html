@@ -6,35 +6,88 @@
     <title>Pedidos</title>
     <link rel="icon" href="./public/flower-icon.png" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <nav>
-        <a href="./index.html">Volver a la página principal</a>
+        <a href="index.html" id="page-logo"
+          ><img
+            style="height: 3rem; width: 3rem; object-fit: contain"
+            src="./public/flower-icon.png"
+            alt="Home"
+        /></a>
+        <a href="./form-contacto.html">Contacto</a>
       </nav>
     </header>
     <main>
-      <h1>Pedidos</h1>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Tipo de Flor</th>
-            <th>Descripcion</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
+      <section id="pedidos">
+        <h1>Pedidos</h1>
+        <table id="tabla-pedidos" border="1">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Tipo de Flor</th>
+              <th>Descripcion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Laura</td>
+              <td>González</td>
+              <td>Violetas africanas</td>
+              <td>Pedido de 5 violetas africanas en macetas pequeñas.</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Juan</td>
+              <td>Pérez</td>
+              <td>Cunas de Moisés</td>
+              <td>Arreglo floral con 3 cunas de Moisés y follaje adicional.</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>María</td>
+              <td>Rodríguez</td>
+              <td>Dieffenbachia</td>
+              <td>Planta de Dieffenbachia grande para interior.</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Pedro</td>
+              <td>Ramírez</td>
+              <td>Violetas africanas</td>
+              <td>Violeta africana morada para decoración de escritorio.</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Sofía</td>
+              <td>López</td>
+              <td>Cunas de Moisés</td>
+              <td>Centro de mesa con Cunas de Moisés y flores blancas.</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>Carlos</td>
+              <td>Martínez</td>
+              <td>Dieffenbachia</td>
+              <td>Pedido de dos Dieffenbachia para sala de estar.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
+    <footer>
+      Mi Floreria - Juan Pablo Michelli &copy; (0343) 32332333
+      - floreria@flor.com.ar
+    </footer>
   </body>
 </html>

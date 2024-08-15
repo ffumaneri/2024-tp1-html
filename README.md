@@ -1,6 +1,6 @@
 # 2024-tp1-html
 
-Trabajo práctico de HTML
+Trabajo práctico de HTML (Julian Misere)
 ## Un cliente de un floreria nos solicita el armado de un sitio para su florería y en el cual luego
 de horas de charla sacamos los siguientes puntos:
 1. Realizar una página que cumpla con las siguientes condiciones:

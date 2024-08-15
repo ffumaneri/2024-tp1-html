@@ -1,0 +1,26 @@
+.fondo
+{
+    background-image: url(https://i.pinimg.com/originals/79/7d/d3/797dd3a35e422e9e01666cf762eaafc9.jpg);
+}
+.fondocri
+{
+    background-image: url(https://s2.best-wallpaper.net/wallpaper/2560x1600/1809/Orange-chrysanthemum-black-background_2560x1600.jpg);
+}
+.fondolir
+{
+    background-image: url(https://s1.1zoom.me/b5050/634/Lilies_Closeup_Black_background_Yellow_Petals_559637_1366x768.jpg);
+}
+.fondolyc
+{
+    background-image: url(https://wallpapercave.com/wp/wp6445533.jpg);
+}
+
+.fondocon
+{
+    background-image: url(https://c.wallhere.com/photos/87/b5/1366x768_px_Cherry_Blossom_flowers_Japan_Pink_Flowers-675066.jpg!d);
+}
+.anim
+{
+    animation: fadeIn;
+    animation-duration: 3s;
+}

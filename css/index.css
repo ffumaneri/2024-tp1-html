@@ -90,12 +90,20 @@ section{
     grid-column: 1/3;
 }
 
-.flores-mas-vendidas__container{
+.flores-mas-vendidas__lista{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1rem;
     margin-top: 2rem;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
 }
 
 .tarjeta-flor{

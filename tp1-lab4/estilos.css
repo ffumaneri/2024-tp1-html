@@ -1,0 +1,146 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    padding: 8px;
+}
+
+img{
+    height: 300px;
+}
+
+.rosa{
+    text-align: center;
+}
+
+.tulipan{
+    text-align: center;
+}
+
+.orquideas{
+    text-align: center;
+}
+
+.margaritas{
+    text-align: center;
+}
+
+.clavel{
+    text-align: center;
+}
+
+.presentacion, fVendidas{
+    background-color: rgba(133, 13, 13, 0.655);
+    color:white;
+    height: 100vh; /*deberia tomar la altura de la pagina */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:20px;
+
+}
+
+.presentacion p{
+    font-size: 1.5 rem;
+    line-height: 1.5rem;
+    max-width: 700px;
+}
+
+.fotos{
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding:20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.fotos img{
+    width: 100%;
+    height: auto;
+}
+
+.fVendidas{
+    background-color: rgba(133, 13, 13, 0.655);
+    color:#fff;
+    align-items: center;
+    text-align: center;
+    padding:20px;
+}
+
+footer{
+    background-color: gray;
+    text-align: center;
+    color: aliceblue;
+}
+
+.formulario_Contacto{
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding:20px;
+    margin: 40px auto;
+    border-radius: 10px;
+}
+
+form label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form select,
+form textarea{
+    width: 100%;
+    padding:10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    width: 100%;
+    padding:10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.tablaPedidos{
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tablaPedidos th, .tablaPedidos td{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+.tablaPedidos caption{
+    caption-side: top;
+    font-weight: bold;
+    padding:10px;
+    font-size: 1.2em;
+}

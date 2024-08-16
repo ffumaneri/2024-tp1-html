@@ -1,10 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8" />
-    <title>Mi Floreria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Mi Florería</title>
 </head>
+
 <body>
-    
+    <header id="header">
+        <div class="content-container contact-header">
+            <p class="top">
+                Envios a todo el país&emsp;CONTACTANOS AL -  
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> 
+                <a href="https://web.whatsapp.com/send?phone=34332332333&amp;text=Hola,%20quisiera%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">+54 343 3233-2333</a>
+
+            </p>
+        </div>
+        <div class="container-header">
+            <a href="/">
+                <img id="logo" src="resources/img/logo-imagen-rojo.jpeg" alt="Logo de Mi Florería" title="Mi Florería">
+            </a>
+            <h1 style="color: #fff; ">Mi Florería</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#productos">Productos</a></li>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section id="inicio">
+            <h1>Bienvenidos a <span style="color: #e74c3c; text-align: center;">Mi Florería</span></h1>
+            <p>En <strong>Mi Florería</strong>, nos enorgullece ser el destino definitivo para todos tus deseos florales. Nuestro rincón verde está diseñado para ofrecerte una experiencia inigualable en el mundo de las flores, donde cada pétalo y hoja están pensados para transformar cualquier ocasión en un evento memorable.</p>
+            
+            <img src="resources/img/flores-floreria.jpg" alt="Flores">
+            
+            <h2>¿Quiénes Somos?</h2>
+            <p><strong>Mi Florería</strong> fue fundada en 2020 por Pepe y Ana, dos apasionados de la botánica que han unido sus habilidades y amor por las flores para crear un espacio único. Ana, con una formación en diseño floral y una profunda conexión con la naturaleza, y Pepe, experto en jardinería y cultivo sostenible, han creado un lugar donde la tradición y la innovación se fusionan armoniosamente.</p>
+            
+            <h2>Nuestra Misión</h2>
+            <p>En <strong>Mi Florería</strong>, nuestro objetivo es ofrecerte flores frescas y radiantes que no solo embellezcan tu entorno, sino que también cuenten una historia. Creemos que cada flor es una obra de arte, y nos dedicamos a cuidar cada detalle para que puedas expresar tus sentimientos más profundos de manera especial.</p>
+            
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li><strong>Arreglos Florales Personalizados:</strong> Desde bodas y eventos corporativos hasta pequeños detalles para sorprender a un ser querido, creamos arreglos personalizados que reflejan tu estilo y ocasión.</li>
+                <li><strong>Suscripción Floral:</strong> Disfruta de la frescura y la belleza de nuestras flores con nuestra suscripción mensual. Te ofrecemos arreglos exclusivos entregados directamente en tu puerta.</li>
+                <li><strong>Workshops y Eventos:</strong> Ofrecemos talleres interactivos para aprender el arte del arreglo floral, así como eventos especiales donde compartimos nuestra pasión por la botánica.</li>
+                <li><strong>Asesoría en Jardinería:</strong> Te ayudamos a diseñar y mantener tu propio jardín con asesoría experta en cultivo y cuidado de plantas.</li>
+            </ul>
+            
+            <h2>Nuestra Filosofía</h2>
+            <p>Creemos en la sostenibilidad y el respeto por el medio ambiente. Utilizamos prácticas de cultivo responsables y trabajamos con proveedores que comparten nuestro compromiso con la conservación. Cada flor que vendemos es cultivada con amor y dedicación, asegurando no solo calidad sino también un impacto positivo en nuestro planeta.</p>
+        </section>
+
+        <section id="productos">
+            <h2 style="text-align: center;">Flores más vendidas</h2>
+            <div class="grid-flores">
+                <div class="producto">
+                    <a href="rosas.html">
+                        <img src="resources/img/rosas.jpg" alt="Rosas">
+                        <p>Rosas</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="lirios.html">
+                        <img src="resources/img/lirios.jpg" alt="Lirios">
+                        <p>Lirios</p>
+                    </a>
+                </div>
+                <div class="producto">
+                    <a href="claveles.html">
+                        <img src="resources/img/clavel.jpg" alt="Claveles">
+                        <p>Claveles</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container contacto" id="contacto">
+        <div class="footer-content">
+            <h2>Contacto</h2>
+            <p>Teléfono: (0343) 32332333</p>
+            <p>Correo: <a href="mailto:floreriapepona@flor.com.ar">floreriapepona@flor.com.ar</a></p>
+        </div>
+    </footer>
 </body>
+
 </html>

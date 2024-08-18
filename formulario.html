@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto - La Florería de Korea</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="formulario-body">
+    <div class="formulario-section">
+        <h2>Formulario de Contacto</h2>
+        <form id="pedido-form">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tipo-flor">Tipo de Flor:</label>
+            <select id="tipo-flor" name="tipo-flor" required>
+                <option value="rosas">Rosas</option>
+                <option value="lilies">Lilies</option>
+                <option value="orquideas">Orquídeas</option>
+            </select>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+            <button type="submit">Enviar Pedido</button>
+            <a href="../index.html" class="back-link">Volver a la página principal</a>
+        </form>
+    </div>
+    <script src="formulario.js"></script>
+</body>
+</html>

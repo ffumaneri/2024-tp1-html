@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de Pedidos - La Florería de Korea</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="listado-pedidos.css">
+</head>
+<body>
+    <a href="index.html" class="back-link">Volver a la página principal</a>
+    <button id="clear-pedidos" class="clear-pedidos">Limpiar Pedidos</button>
+    <div class="table-container">
+        <table class="pedido-table">
+            <thead>
+                <tr>
+                    <th>ID Pedido</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Tipo de Flor</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody id="pedido-body">
+            </tbody>
+        </table>
+    </div>
+    <script src="pedidos.js"></script>
+</body>
+</html>

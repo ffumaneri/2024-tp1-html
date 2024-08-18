@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi floreria</title>
+    <link rel="stylesheet" href="css/pico.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body style="height: 100%; margin-top: 0px; margin-bottom: 0px">
+    <nav style="height: 10%; justify-content: space-around">
+      <ul
+        style="list-style: none; display: flex; justify-content: space-between"
+      >
+        <li style="margin-right: 20px">
+          <a href="./index.html">Inicio</a>
+        </li>
+        <li style="margin-right: 20px">
+          <a href="./contact.html">Formulario</a>
+        </li>
+        <li style="margin-right: 20px">
+          <a href="./tablas.html">Tablas</a>
+        </li>
+      </ul>
+    </nav>
+    <main
+      style="
+        display: flex;
+        flex-direction: column;
+        height: 65%;
+        align-items: center;
+      "
+    >
+      <h1>Pedido a realizar</h1>
+      <form id="formPedido" onsubmit="handlePedido(event)">
+        <label>Nombre: <br /><input type="text" name="nombre" /></label>
+        <label>Apellido: <br /><input type="text" name="apellido" /></label>
+        <select style="width: fit-content" name="tipoFlor">
+          <option value="">Elija el tipo de flor a encargar</option>
+          <hr />
+          <option value="Margarita">Margarita</option>
+          <option value="Lirios">Lirios</option>
+          <option value="Rosas">Rosas</option>
+        </select>
+        <label
+          >Descripción del producto: <input type="text" name="Descripción"
+        /></label>
+        <input type="submit" value="Realizar pedido" />
+      </form>
+    </main>
+    <footer
+      style="
+        height: 20%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      "
+    >
+      <h4>Contacto</h4>
+      <p>Teléfono: (0343) 32332333</p>
+      <p>Mail: floreriapepona@flor.com.ar</p>
+    </footer>
+    <script>
+      function handlePedido(event) {
+        event.preventDefault();
+        if (
+          formPedido.nombre.value != "" &&
+          formPedido.apellido.value != "" &&
+          formPedido.tipoFlor.value != ""
+        ) {
+          window.alert("Pedido realizado");
+          window.location.reload();
+        } else {
+          window.alert("Debe completar todos los campos");
+        }
+      }
+    </script>
+  </body>
+</html>

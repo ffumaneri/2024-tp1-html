@@ -1,0 +1,13 @@
+.flowerImg {
+  min-width: 450px;
+  min-height: 240px;
+  max-width: 450px;
+  max-height: 240px;
+  margin-right: 5%;
+}
+
+form {
+  * {
+    margin-bottom: 10px;
+  }
+}

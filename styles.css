@@ -1,4 +1,3 @@
-/* Estilos generales del body */
 body {
     background-color: #C3E4C7;
     color: #333333;
@@ -7,7 +6,6 @@ body {
     padding: 0;
 }
 
-/* Estilos de la sección del encabezado */
 .header-section {
     background-color: #F7F7F7;
     color: #333333;
@@ -23,7 +21,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Estilos del contenido principal */
 .content {
     padding: 2em;
     max-width: 800px;
@@ -35,8 +32,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-
-/* Estilos para las imágenes del carrusel */
 .carousel {
     position: relative;
     width: 100%;
@@ -52,17 +47,17 @@ body {
 
 .flower-image-detail {
     width: 100%;
-    max-width: 300px; /* Ajusta el tamaño máximo según sea necesario */
+    max-width: 300px; 
     height: auto;
-    border-radius: 12px; /* Bordes redondeados */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
-    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    object-fit: cover; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .flower-image-detail:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada en hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
 }
 
 @keyframes scroll {
@@ -74,7 +69,6 @@ body {
     }
 }
 
-/* Estilos de las flores más vendidas */
 .best-sellers {
     background-color: #ffffff;
     color: #333333;
@@ -147,18 +141,18 @@ body {
 
 .decorative-image {
     width: 100%;
-    max-width: 250px; /* Ajusta el tamaño máximo según sea necesario */
+    max-width: 250px; 
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+    object-fit: cover;
     transition: transform 0.3s ease;
 }
 
 .decorative-image:hover {
     transform: scale(1.05);
 }
-/* Estilos de la sección de testimonios */
+
 .testimonials {
     background-color: #ffffff;
     color: #333333;
@@ -200,7 +194,6 @@ body {
     color: #4f7404;
 }
 
-/* Estilos para la sección de contacto */
 .contact-section {
     background: linear-gradient(to right, #f7f7f7, #e0f7fa);
     color: #333333;
@@ -211,8 +204,8 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     position: fixed;
-    bottom: 10px; /* Espacio desde el borde inferior */
-    left: 10px; /* Espacio desde el borde izquierdo */
+    bottom: 10px; 
+    left: 10px; 
     transition: transform 0.3s ease;
     z-index: 1000;
     border: 3px solid #9ACD32;
@@ -223,7 +216,7 @@ body {
 }
 
 .contact-section:hover {
-    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+    transform: scale(1.05); 
 }
 
 .contact-section h2 {
@@ -250,33 +243,33 @@ body {
 }
 
 .contact-button button {
-    margin-bottom: 1.5em; /* Espacio entre el botón y la tabla */
+    margin-bottom: 1.5em; 
     padding: 10px 20px;
-    background-color: #4f7404; /* Color de fondo verde claro */
-    color: white; /* Color del texto */
+    background-color: #4f7404; 
+    color: white; 
     border: #4f7404;
-    text-decoration: none; /* Sin subrayado */
-    font-size: 1em; /* Tamaño de la fuente */
-    font-weight: bold; /* Negrita */
+    text-decoration: none; 
+    font-size: 1em; 
+    font-weight: bold;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    text-align: center; /* Centra el texto dentro del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
 }
 
 .contact-button button:hover {
     background-color: #9ACD32;
 }
 
-/* Estilos para la página de pedidos */
+
 .table-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 70vh; /* Ajusta esta altura según lo necesario */
+    min-height: 70vh; 
     padding: 2em;
 }
 
-/* Tabla de pedidos */
+
 .pedido-table {
     width: 100%;
     max-width: 800px;
@@ -287,7 +280,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Celdas de la tabla */
+
 .pedido-table th,
 .pedido-table td {
     padding: 12px;
@@ -295,38 +288,37 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-/* Encabezado de la tabla */
+
 .pedido-table th {
     background-color: #4f7404;
     color: white;
 }
 
-/* Fila de la tabla al pasar el mouse */
+
 .pedido-table tr:hover {
     background-color: #f5f5f5;
 }
 
-/* Mensaje cuando no hay datos */
+
 .empty-message {
     text-align: center;
     color: #999;
     font-style: italic;
 }
 
-/* Estilos para la página de formulario */
+
 .formulario-body {
     margin: 0;
     padding: 0;
     font-family: 'Playfair Display', serif;
-    background: #ffffff; /* Fondo claro para la página */
+    background: #ffffff; 
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
-    width: 100vw; /* Ocupa el 100% del ancho de la ventana */
+    height: 100vh; 
+    width: 100vw; 
 }
 
-/* Estilos para la sección del formulario */
 .formulario-section {
     background: linear-gradient(to right, #f7f7f7, #e0f7fa);
     color: #333333;
@@ -335,7 +327,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 500px; /* Ancho máximo del formulario */
+    max-width: 500px; 
     border: 2px solid #9ACD32;
     background-image: url('https://www.transparenttextures.com/patterns/45-degree-fabric.png');
     background-size: cover;
@@ -343,7 +335,6 @@ body {
     background-position: center;
 }
 
-/* Estilos para el título del formulario */
 .formulario-section h2 {
     margin: 1;
     color: #4f7404;
@@ -351,19 +342,17 @@ body {
     font-weight: 700;
 }
 
-/* Estilos para el formulario en sí */
 .formulario-section form {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-/* Estilos para las etiquetas del formulario */
 .formulario-section label {
     font-weight: bold;
 }
 
-/* Estilos para los campos del formulario */
+
 .formulario-section input,
 .formulario-section select,
 .formulario-section textarea {
@@ -372,45 +361,43 @@ body {
     border-radius: 4px;
 }
 
-/* Estilos para el botón del formulario */
 .formulario-section button {
-    margin-bottom: 0em; /* Espacio entre el botón y la tabla */
+    margin-bottom: 0em; 
     padding: 10px 20px;
-    background-color: #4f7404; /* Color de fondo verde claro */
-    color: white; /* Color del texto */
+    background-color: #4f7404; 
+    color: white; 
     border: #4f7404;
-    text-decoration: none; /* Sin subrayado */
-    font-size: 1em; /* Tamaño de la fuente */
-    font-weight: bold; /* Negrita */
+    text-decoration: none; 
+    font-size: 1em;
+    font-weight: bold; 
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    text-align: center; /* Centra el texto dentro del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
 }
 
-/* Estilos para el botón del formulario en hover */
 .formulario-section button:hover {
-    background-color: #7cbf29; /* Color de fondo al pasar el mouse */
+    background-color: #7cbf29; 
 }
 
 
 
 .back-link {
     margin-top: 0em;
-    margin-bottom: 0em; /* Espacio entre el botón y la tabla */
+    margin-bottom: 0em; 
     padding: 10px 20px;
-    background-color: #4f7404; /* Color de fondo verde claro */
-    color: white; /* Color del texto */
+    background-color: #4f7404; 
+    color: white; 
     border: #4f7404;
-    text-decoration: none; /* Sin subrayado */
-    font-size: 1em; /* Tamaño de la fuente */
-    font-weight: bold; /* Negrita */
+    text-decoration: none; 
+    font-size: 1em; 
+    font-weight: bold; 
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    text-align: center; /* Centra el texto dentro del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
 }
 
 .back-link:hover {
-    background-color: #7cbf29; /* Color de fondo al pasar el mouse */
+    background-color: #7cbf29; 
 }
 
 .orders-button {
@@ -421,17 +408,17 @@ body {
 }
 
 .orders-button button {
-    margin-bottom: -1em; /* Espacio entre el botón y la tabla */
+    margin-bottom: -1em; 
     padding: 10px 20px;
-    background-color: #4f7404; /* Color de fondo verde claro */
-    color: white; /* Color del texto */
+    background-color: #4f7404; 
+    color: white; /
     border: #4f7404;
-    text-decoration: none; /* Sin subrayado */
-    font-size: 1em; /* Tamaño de la fuente */
-    font-weight: bold; /* Negrita */
+    text-decoration: none; 
+    font-size: 1em; 
+    font-weight: bold; 
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    text-align: center; /* Centra el texto dentro del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
 }
 
 .orders-button button:hover {
@@ -439,18 +426,18 @@ body {
 }
 
 .clear-pedidos{
-    margin-bottom: -1em; /* Espacio entre el botón y la tabla */
+    margin-bottom: -1em; 
     padding: 10px 20px;
-    background-color: #4f7404; /* Color de fondo verde claro */
-    color: white; /* Color del texto */
+    background-color: #4f7404; 
+    color: white; 
     border: #4f7404;
-    text-decoration: none; /* Sin subrayado */
-    font-size: 1em; /* Tamaño de la fuente */
-    font-weight: bold; /* Negrita */
+    text-decoration: none; 
+    font-size: 1em; 
+    font-weight: bold; 
     transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    text-align: center; /* Centra el texto dentro del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 .clear-pedidos:hover {
-    background-color: #7cbf29; /* Color de fondo al pasar el mouse */
+    background-color: #7cbf29;
 }

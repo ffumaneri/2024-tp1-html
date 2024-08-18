@@ -1,32 +1,34 @@
 document.getElementById('pedido-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const nombre = document.getElementById('nombre').value;
-    const apellido = document.getElementById('apellido').value;
-    const email = document.getElementById('email').value;
-    const tipoFlor = document.getElementById('tipo-flor').value;
-    const descripcion = document.getElementById('descripcion').value;
+    const confirmacion = window.confirm("¿Estás seguro de que deseas confirmar este pedido?");
 
-    let currentId = parseInt(localStorage.getItem('currentId')) || 1;
+    if (confirmacion) {
+        const nombre = document.getElementById('nombre').value;
+        const apellido = document.getElementById('apellido').value;
+        const email = document.getElementById('email').value;
+        const tipoFlor = document.getElementById('tipo-flor').value;
+        const descripcion = document.getElementById('descripcion').value;
 
-    const nuevoPedido = {
-        id: currentId,
-        nombre: nombre,
-        apellido: apellido,
-        email: email,
-        tipoFlor: tipoFlor,
-        descripcion: descripcion
-    };
+        let currentId = parseInt(localStorage.getItem('currentId')) || 1;
 
-    localStorage.setItem('currentId', currentId + 1);
+        const nuevoPedido = {
+            id: currentId,
+            nombre: nombre,
+            apellido: apellido,
+            email: email,
+            tipoFlor: tipoFlor,
+            descripcion: descripcion
+        };
 
-    const pedidos = JSON.parse(localStorage.getItem('pedidos')) || [];
+        localStorage.setItem('currentId', currentId + 1);
 
-    pedidos.push(nuevoPedido);
+        const pedidos = JSON.parse(localStorage.getItem('pedidos')) || [];
+        pedidos.push(nuevoPedido);
+        localStorage.setItem('pedidos', JSON.stringify(pedidos));
 
-    localStorage.setItem('pedidos', JSON.stringify(pedidos));
+        document.getElementById('pedido-form').reset();
 
-    document.getElementById('pedido-form').reset();
-
-    window.location.href = 'pedidos.html';
+        window.location.href = 'pedidoConfirmado.html';
+    }
 });

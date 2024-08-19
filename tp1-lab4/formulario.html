@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario de contacto</title>
+</head>
+<body style="background-color: bisque;">
+    <div class="formulario_Contacto">
+        <form id="formContacto">
+            <label for="nombre" class="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+            <br>
+            <label for="apellido" class="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" required="obligatorio" placeholder="Escribe tu apellido">
+            <br>
+            <label for="tipo_Flor" class="tipo_Flor">Tipo Flor:</label>
+            <select name="tipo_Flor" id="tipo_Flor">
+                <option value="rosa">Rosa</option>
+                <option value="clavel">Clavel</option>
+                <option value="margarita">Margarita</option>
+                <option value="tulipan">Tulipan</option>
+                <option value="orquidea">Orquidea</option>
+            </select>
+            <br>
+    
+            <label for="descripcion" class="descripcion">Descripcion</label>
+            <textarea name="descripcion" id="descripcion" placeholder="Descripcion del pedido"></textarea>
+    
+            <br>
+    
+            <button type="submit" name="button_Enviar" id="button_Enviar">
+                <p>Enviar</p>
+            </button>
+        </form>
+    </div>
+    <p style="text-align: center;"><a href="index.html">Volver a la pagina principal</a></p>
+</body>
+
+<script lang="javascript">
+ const form = document.querySelector("#formContacto");
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const formData = new FormData(form);
+            if(formData.get("nombre") == ""){
+                alert("nombre es obligatorio");
+                return;
+            }
+            else{
+            alert("Se envio el form. Nombre = "+ formData.get("nombre")+
+             " Apellido = "+ formData.get("apellido"))
+              }
+        });
+
+</script>
+</html>

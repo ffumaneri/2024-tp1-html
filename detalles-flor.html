@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title id="nombre"></title>
+</head>
+<body>
+    <div><a href="/">Volver a pagina principal</a></div>
+    <div id="detalles">
+        <h1 class="titulo texto-centrado" id="nom"></h1>
+        <p id="descripcion"></p>
+        <div class="item-centrado">
+            <img id="imagen" src="" alt="Imagen de la flor">
+        </div>
+    </div>
+
+    <script>
+        const florData = {
+            'rosa': {
+                nombre: 'Rosa',
+                descripcion: 'El género Rosa está compuesto por un conocido grupo de arbustos generalmente espinosos y floridos representantes principales de la familia de las rosáceas. Se denomina rosa a la flor de los miembros de este género y rosal a la planta. El número de especies ronda las cien, la mayoría originarias de Asia y un reducido número nativas de Europa, Norteamérica y África noroccidental. Tanto especies como cultivares e híbridos se cultivan como ornamentales por la belleza y fragancia de su flor; pero también para la extracción de aceite esencial, utilizado en perfumería y cosmética, usos medicinales (fitoterapia) y gastronómicos.',
+                imagen: 'images/rosa.jpg'
+            },
+            'jazmin': {
+                nombre: 'Jazmín',
+                descripcion: 'Plantas de porte arbustivo o trepador perennifolias, caducifolias o semicaducifolias. Los tallos son cuadrangulares, de color verde o grisáceo, profusamente ramificados. Hojas dispuestas de forma alterna u opuesta; pueden ser trifoliadas o imparipinnadas. Las inflorescencias son racimosas, normalmente surgen de las axilas de las hojas. Las flores, comúnmente blancas –si bien hay algunas especies amarillas y rojizas–, son hermafroditas. Tienen un cáliz tubular, con cinco pétalos y dos estambres unidos al tubo de la corola con anteras amarillas. Los frutos son bayas de color negro al madurar con 1 a 4 semillas.4​ La fragancia que exhalan las flores es muy intensa y se percibe como un aroma dulce.',
+                imagen: 'images/jazmin.jpg'
+            },
+            'amapola': {
+                nombre: 'Amapola',
+                descripcion: 'Es una planta de ciclo anual que puede alcanzar más de 50 cm de altura. Posee tallos erectos y poco ramificados con finos pelillos. Las hojas, que nacen alternas a lo largo del tallo, sin peciolo, son pinnadas y muy dentadas en los márgenes con una única nervadura central. Las flores, de color escarlata intenso, acampanadas y casi esféricas, poseen cuatro finos pétalos y dos sépalos vellosos. Los pétalos son muy delicados y se marchitan rápidamente, por lo que las flores no puede usarse en adornos florales. Los estambres, de color negro, forman un racimo anillado alrededor del gineceo, lo que le da el aspecto de botón negro. El fruto es una cápsula unilocular con falsos tabiques, verde pálido, de forma ovalada/subglobosa, truncada por una especie de tapa en la parte superior (disco) con ocho a dieciocho radios y con numerosas semillas inframilimétricas, que escapan a través de poros debajo del disco superior (dehiscencia porícida). Dichas diminutas semillas son, como en todas las especies del género, de forma arriñonada, alveoladas con retículo poligonal y de color pardo. Florecen de principio a final de la primavera. No resisten los climas cálidos ni la humedad',
+                imagen: 'images/amapola.jpg'
+            },
+            'tulipan': {
+                nombre: 'Tulipán',
+                descripcion: 'Tulipa es un género de plantas perennes y bulbosas perteneciente a la familia Liliaceae, en el que se incluyen los populares tulipanes, nombre común con el que se designa a todas las especies, híbridos y cultivares de este género. Tulipa contiene aproximadamente 150 especies e innumerables cantidades de híbridos y cultivares conseguidos a través de mejoramiento genético que los floricultores fueron realizando desde el siglo XVI.',
+                imagen: 'images/tulipan.jpg'
+            },
+            'bromelia': {
+                nombre: 'Bromelia',
+                descripcion: 'Es un género tropical americano de plantas de la familia Bromeliceae. Son plantas de hábitos terrestres, herbáceas, litófitas, que crecen sobre piedras o bien son epífitas que se desarrollan sobre árboles, cactus, etc. acaulescentes a cortamente caulescentes, rizomatosas o estoloníferas; plantas hermafroditas. Hojas arrosetadas y usualmente sin tallo, gruesamente armadas. Inflorescencia sésil o escapífera, pinnada o fasciculado compuesta (simple), sublaxamente alargada a subcapitada; sépalos libres o rara vez connados; pétalos libres, carnosos; estambres connados; ovario ínfero o súpero. Fruto una baya; semillas sin apéndices. Es característica de algunas especies la reducción vegetativa, donde el cuerpo de la planta carece de tallo, por ejemplo, el heno Tillandsia usneoides. Presentan varias características morfológicas casi únicas de la familia, como el desarrollo de una estructura tipo “tanque", formada por el solapamiento de las bases de las hojas, donde se acumulan agua de lluvia y materia orgánica, que origina un hábitat en el que se desarrollan insectos y arácnidos, así como ranas, etc.; además, de servir como fuente de alimento para otros vertebrados. Otra estrategia casi única de la familia es la presencia de tricomaos foliares peltados de color grisáceo, en especies que ocupan hábitats extremadamente secos y con altas radiaciones solares.',
+                imagen: 'images/bromelia.jpg'
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const flor = params.get('flor');
+
+            if (flor && florData[flor]) {
+                const data = florData[flor];
+                document.getElementById('nom').innerText = data.nombre;
+                document.getElementById('descripcion').innerText = data.descripcion;
+                document.getElementById('imagen').src = data.imagen;
+            } else {
+                document.getElementById('detalles').innerHTML = '<p>Flor no encontrada.</p>';
+            }
+        });
+    </script>
+</body>
+</html>

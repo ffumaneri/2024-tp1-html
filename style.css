@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+h1{font-size:3.5em ;}
+h2{font-size:2.5em ;}
+h3{font-size:2.0em;}
+p{font-size: 1.25em;}
+body {
+    font-family: "roboto" sans-serif;
+    margin: 0;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+    background-color:rgb(245,245,245);
+}
+header .logo{
+     margin: 0;
+     padding: 25px 30px;
+     font-weight: bold;
+     color: rgb(117, 5, 93);
+     font-size: 2.2xem;
+}
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+header nav{
+    display: flex;
+    flex-direction:column;
+    text-align: center ;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight:bold ;
+    color: black;
+}
+header a:hover {
+color: blueviolet;
+}
+#descripcion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height:80vh;
+    color:white;
+    background-image:linear-gradient(
+        0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+    ),url(https://fondosmil.co/fondo/16211.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#descripcion h1{
+    color:white;
+
+}
+#fotos {
+background-color: rgb(211, 147, 147);
+color: white;
+}
+#fotos .container{
+    padding: 150px 12px;
+}
+#fotos .carta{
+background-position:center center ;
+background-size: cover;
+padding:50px;
+margin: 20px;
+border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+    ),url(rosas.jpg) ;
+    background-position:center center ;
+    background-size: cover;
+}
+.carta:nth-child(2){
+    background-image:linear-gradient(
+        0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+    ),url(girasoles.jpg) ;
+    background-position:center center ;
+    background-size: cover;
+}
+#masvendidas{
+    background-color: rgb(211, 147, 147);
+     color: white;
+     display: flex;
+}
+#masvendidas li{
+margin: 16px;
+font-weight: bold;
+}
+#masvendidas a{
+ font-size: 1.8em;
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight:bold ;
+   color: black;
+    
+}
+footer p{
+    margin: 0;
+    padding:  12px;
+}
+footer .container
+{
+    height: 100px;
+    display: flex;
+    justify-content:center ;
+    align-items: flex-end;
+}
+@media (min-width:720px) {
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+}

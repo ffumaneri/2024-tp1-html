@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(https://fondosmil.co/fondo/16211.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white; 
+}
+
+.main {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 { font-size: 3.5em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 2.0em; }
+p { font-size: 1.25em; }
+
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+}
+
+footer .container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

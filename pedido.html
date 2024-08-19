@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido - Mi florería</title>
+    <link rel="stylesheet" type="text/css" href="stylep.css">
+</head>
+<body>
+    <h1>Realizar Pedido</h1>
+    <div class="main">
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+
+        <label for="tipoFlor">Tipo de flor:</label>
+        <select id="tipoFlor" name="tipoFlor" required>
+            <option value="">Seleccione una flor</option>
+            <option value="rosa">Rosa</option>
+            <option value="girasol">Girasol</option>
+        </select><br><br>
+
+        <label for="descripcion">Descripción del pedido:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar Pedido">
+    </form>
+  </div>
+    <p><a href="flores.html">Volver a la página principal</a></p>
+    <footer>
+        <div class = "container">
+        <p>Teléfono: (0343) 32332333<br>
+        Correo: floreria@flor.com.ar</p>
+        <p>&copy;Floreria 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

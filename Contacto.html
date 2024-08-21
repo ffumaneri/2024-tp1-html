@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="estilo.css">
+
+    
+</head>
+<header>
+    <img src="banner_Mesa de trabajo 1.png">
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Pedidos.html">Pedidos</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+</header>
+<body>
+    <div class="tabla">
+        <img src="flores-contacto.jpg" alt="floresdecontacto" class="top-imagen">
+
+        <form id="formulario-Contacto">
+            <tr>
+                <td ><label for="name">Nombre</label></td>
+                <td ><input id="name" name="name"></br></td>
+            
+            </tr>
+            <tr>
+                <td><label for="Apellido">Apellido</label></td>
+                <td><input id="Apellido" name="Apellido"></br></td>
+            
+            </tr>
+            <tr>
+                <td><label for="seleccion"> Seleccionar</label></td>
+                <td><select id="seleccion" name="seleccion">
+                    <option value="tulipanes">Tulipanes</option>
+                    <option value="astromelias">Astromelias</option>
+                    <option value="gerberas">Gerberas</option>
+                    <option value="rosas">Rosas</option>
+                </select></br></td>
+            </tr>
+            <tr>
+                <td><label for="Descripcion">Descripcion del pedido</label></td>
+                <td><input id="Descripcion name="Descripción></br></td>
+            
+            </tr>
+
+            <input id="val4" type="submit" value="Enviar"></br>
+        </form>
+</div>
+    <script lang="javascript">
+        const form = document.querySelector("#form1");
+
+
+        form.addEventListener("submit", (event) =>{
+            event.preventDefault();
+            const formData = new FormData(form);
+            alert("¡Gracias " + formData.get("name") + "! Tu mensaje fue enviado correctamente")
+        })
+    </script>
+</body>
+    
+</html>

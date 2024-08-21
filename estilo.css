@@ -1,0 +1,146 @@
+body{
+    background-color: #F7F6D5;
+    /* display: flex;
+    flex-direction: column; */
+}
+h1{
+
+    color: #e87400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2{
+    color: #e87400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+ul{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+ overflow: hidden;
+  background-color: #44543c;
+  top: 10;
+  width: 100%;
+}
+li{
+    display: inline;
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+  }
+li a:hover {
+    background-color: #a3b797;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+}
+header{
+    background-color: #44543c;
+}
+
+
+
+.presentacion {
+    text-align: center;
+    margin: 5%;
+    
+}
+
+.row{
+    flex-direction: row;
+}
+.gallery {
+    margin: 5%;
+    border: 1px solid #bebebd;
+    float: left;
+    width: 180px;
+    background-color: #a3b797;
+
+  }
+  
+.gallery:hover {
+    border: 2px solid #e87400;
+    color: cornsilk;
+  }
+  
+.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+.desc {
+    padding: 5px;
+    text-align: center;
+  }
+
+.descripcion {
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: justify;
+}
+.descripcion-imagen {
+    float: right;
+    width: 300px;
+    margin-left: 20px;
+  
+}
+
+.bloque{
+    background-color: #44543c;
+
+    margin-top: 5%;
+    padding: auto;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: antiquewhite;   
+    text-align: center;
+
+                             
+}
+.Top-Flores{
+
+    padding: auto;
+    float: left;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 25px;
+
+    
+}
+.top-imagen{
+    float: right;
+    width: 300px;
+
+}
+
+.email{
+    margin-top: 5%;
+    padding: auto;
+    float: left;
+}
+
+  footer{
+    background-color: #a3b797;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.tabla{
+    margin: 5%;
+    padding: 5px;
+}

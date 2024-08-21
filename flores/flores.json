@@ -1,0 +1,19 @@
+{
+    "flores": [
+        {
+            "nombre": "Rosa",
+            "imagen": "/imagenes/rosa02.jpg",
+            "descripcion": "Esta es una rosa, una flor hermosa y simbólica que representa el amor y la belleza."
+        },
+        {
+            "nombre": "Tulipán",
+            "imagen": "/imagenes/tulipan.jpg",
+            "descripcion": "El tulipán es una flor vibrante y elegante que simboliza la primavera y el renacimiento."
+        },
+        {
+            "nombre": "Hortensia",
+            "imagen": "/imagenes/hortensia.jpg",
+            "descripcion": "La hortensia es una flor con exuberantes racimos de pétalos, que representa la gratitud y la gracia."
+        }
+    ]
+}

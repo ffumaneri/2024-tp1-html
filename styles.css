@@ -190,12 +190,18 @@ nav a:nth-child(3):hover~span {
 }
 
 .flores-favoritas li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-family: "Bona Nova", serif;
     font-weight: 300;
     font-size: 35px;
     opacity: 0.8;
     text-shadow: 2px 2px #131313;
+    height: 100%;
+    width: 100%;
+    
 }
 
 .Img-Rosa {

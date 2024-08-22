@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+
+<body style="background-color: black;">
+    <div style="color: white; text-align: left; margin-left: 50px">
+        <h1>Datos del pedido</h1>
+        <form id="form1">
+            <tr>
+                <td><label for="nombre">Nombre</label> <label for="apellido"
+                        style="margin-left: 163px">Apellido</label><br><input id="nombre" name="nombre"
+                        style="margin-right: 50px;" /><input id="apellido" name="apellido" /></td>
+            </tr><br><br>
+            <tr>
+                <label for="opciones">Tipo de flor</label><br>
+                <select id="opciones" name="opciones" style="margin-top: 5px;">
+                    <option value="Rosa Azul">Rosa Azul</option>
+                    <option value="Dalia">Dalia</option>
+                    <option value="Hortensia">Hortensia</option>
+                    <option value="Rosa Roja">Rosa Roja</option>
+                </select>
+            </tr><br><br>
+            <tr>
+                <label for="descripcion">Descripción</label> <br>
+                <textarea id="descripcion" name="descripcion" rows="4" cols="95"></textarea>
+            </tr><br><br>
+            <tr>
+                <td colspan="2">
+                    <input id="val1" type="submit" value="Enviar"
+                        style="background-color: gray; color: white; width: 12%; height: 30px; margin-left: 270px;" />
+                </td>
+            </tr>
+        </form><br><br>
+
+        <script lang="javascript">
+            const form = document.querySelector("#form1");
+            form.addEventListener("submit", (event) => {
+                event.preventDefault();
+                const formData = new FormData(form);
+                alert("Datos del pedido: \nNombre = " + formData.get("nombre") + "\nApellido = " + formData.get("apellido") +
+                    "\nTipo de flor = " + formData.get("opciones") + "\nDescripción = " + formData.get("descripcion"))
+            });
+        </script>
+
+        <a href="principal.html">Volver</a>
+    </div>
+</body>
+
+</html>

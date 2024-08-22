@@ -89,8 +89,9 @@ nav a:hover ~ span {
     width: 100%;
 }
 img{
-    max-width: 500px;
-    min-height: 400px;
+    margin-top: -20%;
+    max-width: 400px;
+    min-height: 325px;
     max-height: 500px;
 }
 

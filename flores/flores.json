@@ -3,17 +3,17 @@
         {
             "nombre": "Rosa",
             "imagen": "/imagenes/rosa02.jpg",
-            "descripcion": "Esta es una rosa, una flor hermosa y simbólica que representa el amor y la belleza."
+            "descripcion": "Esta es una rosa, una flor hermosa y simbólica, notable por su belleza, la suavidad de su fragancia y su color y representa el amor, pasión y la atracción, perfecta para expresar sentimientos profundos"
         },
         {
             "nombre": "Tulipán",
             "imagen": "/imagenes/tulipan.jpg",
-            "descripcion": "El tulipán es una flor vibrante y elegante que simboliza la primavera y el renacimiento."
+            "descripcion": "El tulipán es una flor vibrante y elegante en forma de copa que simboliza el amor perfecto y la elegancia, embelleciendo cualquier espacio en el que este presente "
         },
         {
             "nombre": "Hortensia",
             "imagen": "/imagenes/hortensia.jpg",
-            "descripcion": "La hortensia es una flor con exuberantes racimos de pétalos, que representa la gratitud y la gracia."
+            "descripcion": "La hortensia es una flor con exuberantes racimos de pétalos, que representa la gratitud y la gracia, siendo perfentas para crear un ambiente de elegancia y frescura"
         }
     ]
 }

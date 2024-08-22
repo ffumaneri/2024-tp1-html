@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Pedido</title>
+    <link rel="stylesheet" href="form_style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="nav">Inicio</a>
+            <a href="/formulario/lista_de_pedidos.html" class="nav">Lista de Pedidos</a>
+            <span></span>
+        </nav>
+    </header>
+    <div class="contenedor">
+        <form class="Form-pedido">
+            <h4>Formulario de Pedido</h4>
+            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingresar su nombre">
+            <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingresar su apellido">
+            <input class="controls" type="text" name="descripción" id="descripción" placeholder="Descripción">
+            <label for="flor">Tipo de Flor</label>
+            <select class="controls" id="flor" name="flor" required>
+                <option value="Rosa">Rosa</option>
+                <option value="Tulipán">Tulipán</option>
+                <option value="Hortensia">Hortensia</option>
+            </select>
+            <input class="boton" type="submit" value="Generar pedido" />
+        </form>
+    </div>
+    <footer>
+        <p>Teléfono: (0343) 32332333 | Email: <a href="mailto:floreria@flor.com.ar">floreria@flor.com.ar</a></p>
+    </footer>
+</body>
+<script lang="javascript">
+    const form = document.querySelector('.Form-pedido');
+    form.addEventListener('submit', (event) => 
+    {
+        event.preventDefault(); 
+        const nombre = document.getElementById('nombre').value.trim();
+        const apellido = document.getElementById('apellido').value.trim();
+        const correo = document.getElementById('descripción').value.trim();
+        const flor = document.getElementById('flor').value;
+
+        if (nombre === '' || apellido === '' || correo === '' || flor === '') {
+            alert('Por favor, complete todos los campos.');
+        } else {
+            alert('¡Pedido generado exitosamente!');
+            document.querySelector('.Form-pedido').reset();
+        }
+    });
+</script>
+</html>

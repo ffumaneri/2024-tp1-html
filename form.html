@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Contactanos</title>
+</head>
+<body>
+   
+        
+    <div class="container">
+   
+        <header>
+            <h2 class="title" >
+                Floreria Pepona
+            </h2>
+           
+            <img src="./img/floreria.jpg"  alt="">
+            
+        </header>
+    
+        <nav id="navbar">    
+            <div class="nav-left">
+                <a href="http://127.0.0.1:5500/index.html">Inicio</a>
+                <a href="http://127.0.0.1:5500/pedidos.html">Pedidos</a>
+                <a href="http://127.0.0.1:5500/form.html">Contacto</a>
+            </div>
+           
+            <div class="nav-right">
+                <a href="https://www.facebook.com" target="_blank"> <img src="./img/facebook.png" alt=""> </a>
+                <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.png" alt=""></a>
+            </div>          
+        </nav>
+    </div>
+
+    <div class="formContainer">
+        <form action="" class="form">
+            <h2 class="title" >
+                Hace tu pedido
+            </h2>          
+            <!-- nombre, apellido, tipo de flor (select) , descripción del pedido -->
+            <div class="campoTexto">
+                <label for="nombre">Nombre</label> <br> 
+                <input type="text" id="nombre"  placeholder="su" +
+                title="Por favor, introduce tu nombre." required> 
+            </div>
+           
+            <div class="campoTexto">
+                <label for="apellido">Apellido</label><br>
+                <input type="text" id="apellido"  placeholder="su" required>  
+            </div>
+
+            <div class="campoTexto">
+                <label for="email">tipo de flor</label><br> 
+                <select name="Tipo" id="tipo"  required>
+                    
+                    <option value="">Seleccione una opción</option>
+                    <option>Clavelina</option>                    
+                    <option>Clavel</option>
+                    <option>Lirio</option>
+                    <option>Rosa</option>
+                    <option>Astrolemina</option>
+                    <option>Hortensia</option>
+                </select>
+            </div>
+
+            <div class="campoTexto">
+                <label for="desdripcion">descripcion</label> <br>
+                <textarea id="desdripcion" name="desdripcion" rows="2" cols="50" required >
+
+                </textarea>
+                <!-- <input type="textarea" id="email"  placeholder="test@gmail.com" required>  <br> <br> -->
+           
+                <button class="button2" 
+                style="width: 60%; "
+                type="submit"
+                >ENVIAR</button>
+            </div>
+
+            <!-- <div>
+                <input type="submit" value="Enviar" 
+                style="background-color: #ACE1AF; width: 40%; margin-left: 4rem;"
+                onclick="alert('Datos enviados\nGracias por su compra!!'), e.target.value">
+            </div> -->
+           
+           
+            <!-- <button>
+                Enviar              
+            </button> -->
+        </form>
+
+        <div class="sideform">
+            <h2 class="title"  >
+                Mas vendidas
+            </h2>
+            <div id="masvendidas" >
+                <div class="masvendidas">
+                    <h3>
+                        1.- Lirio
+                    </h3>
+                    <img src="./img/3-lirio-640.jpg" alt="">
+                </div>
+
+                <div class="masvendidas">
+                    <h4>
+                        2.- Rosa
+                    </h4>
+                    <img src="./img/4-rosa-640.jpg" alt="">
+                </div>
+
+                <div class="masvendidas">
+                    <h4>
+                        3.- Clavel
+                    </h4>
+                    <img src="./img/2-clavel-640_480.jpg" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+       
+
+        <!-- ********** -->
+       
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <p><strong>Dirección:</strong> Calle Falsa 123, Ciudad Imaginaria</p>
+            <p><strong>Teléfono:</strong> +123 456 789</p>
+            <p><strong>Email:</strong> correo@ejemplo.com</p>
+            <p><strong>Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+        </div>
+        <div class="footer-column">
+            <h3>Información Adicional</h3>
+            <p><strong>Dato 1:</strong> Valor de Dato 1</p>
+            <p><strong>Dato 2:</strong> Valor de Dato 2</p>
+            <p><strong>Dato 3:</strong> Valor de Dato 3</p>
+            <p><strong>Dato 4:</strong> Valor de Dato 4</p>
+        </div>
+    </footer>
+  
+        <!-- ********** -->
+
+
+        <!-- onclick="alert('Datos enviados\nGracias por su compra!!'), e.target.value" --> 
+
+           
+   
+</body>
+</html>

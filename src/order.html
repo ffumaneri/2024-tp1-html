@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="styles.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=New+Amsterdam&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+		<title>Mi florería</title>
+	</head>
+
+	<body>
+		<span id="top"></span>
+
+		<header>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="order.html">Contacto</a></li>
+				<li><a href="orders.html">Pedidos</a></li>
+			</ul>
+		</header>
+
+		<main>
+			<section class="light">
+				<h1>Pide una Flor</h1>
+
+				<h2>Formulario de pedido</h2>
+				<p>
+					Completa el Formulario debajo para realizar un encargo de las flores que quieras.
+				</p>
+
+				<form>
+					<label for="name" class="input-label" aria-required="true">Nombre<span class="input-label-mark">*</span></label>
+					<input name="name" type="text" class="inline-text-input" required />
+
+					<label for="surname" class="input-label" aria-required="true">Apellido<span class="input-label-mark">*</span></label>
+					<input name="surname" type="text" class="inline-text-input" required />
+
+					<label for= "flower" class="input-label" aria-required="true">Tipo de Flor<span class="input-label-mark">*</span></label>
+					<select name="flower" required>
+						<option value="" disabled selected> - Selecciona una opción - </option>
+						<optgroup label="Más vendidas">
+							<option value="rosa">Rosa</option>
+							<option value="tulipan">Tulipán</option>
+							<option value="lirio">Lirio</option>
+						</optgroup>
+						<optgroup label="Otras">
+							<option value="margarita">Margarita</option>
+							<option value="orquidea">Orquídea</option>
+							<option value="girasol">Girasol</option>
+							<option value="crisantemo">Crisantemo</option>
+							<option value="clavel">Clavel</option>
+							<option value="hortensia">Hortensia</option>
+							<option value="peonia">Peonía</option>
+							<option value="geranio">Geranio</option>
+							<option value="jazmin">Jazmín</option>
+							<option value="dalia">Dalia</option>
+							<option value="flor-de-loto">Flor de Loto</option>
+							<option value="amapola">Amapola</option>
+							<option value="anemona">Anémona</option>
+							<option value="fresia">Fresia</option>
+							<option value="narciso">Narciso</option>
+							<option value="azucena">Azucena</option>
+							<option value="violeta">Violeta</option>
+						</optgroup>
+					</select>
+
+					<label for="description" class="input-label">Descripción de Pedido</label>
+					<textarea name="description" type="text" class="paragraph-text-input"></textarea>
+
+					<input value="Realizar Pedido" type="submit"></input>
+				</form>
+			</section>
+		</main>
+
+		<a href="#top" class="scroll-to-top">▲<br>SUBIR</a>
+	</body>
+</html>

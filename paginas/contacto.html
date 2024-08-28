@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../estilo.css">
+    
+</head>
+<body class="fondoContactoLista">
+    <h2>Realizar un pedido</h2>
+
+<form id="contactoForm">
+  <label for="fnombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" value=""><br>
+  <br>
+  <label for="fApellido">Apellido:</label><br>
+  <input type="text" id="apellido" name="apellido" value=""><br>
+  <br>
+  <label for="fSeleccionarFlor">Seleccionar flor</label><br>
+  <select name="fSeleccionarFlor" id="seleccionar">
+    <option disabled="">Seleccione una opcion</option>
+    <option value="Rosas">Rosas</option>
+    <option value="Lirios">Lirios</option>
+    <option value="Tulipanes">Tulipanes</option>
+    <option value="Girasol">Girasol</option>
+    <option value="Orquideas">Orquideas</option>
+  </select><br>  
+  <br>
+  <label for="fdescripcion">Descripcion del pedido</label><br>
+  <textarea name="descripcion" id="descripcion" cols="40" rows="4"></textarea><br>
+  <input type="submit" value="Enviar">
+
+</form>
+
+<script>
+  document.getElementById('contactoForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const nombre = document.getElementById('nombre').value;
+    const apellido = document.getElementById('apellido').value;
+    const seleccionar = document.getElementById('seleccionar').value;
+    const descripcion = document.getElementById('descripcion').value;
+
+    let contacto =JSON.parse(localStorage.getItem('contacto')) || [];
+    contacto.push({nombre,apellido,seleccionar,descripcion});
+
+    localStorage.setItem('contacto', JSON.stringify(contacto));
+
+    window.location.href='lista.html';
+
+  });
+</script>
+
+
+<a href="../index.html" class="btn">Volver</a>
+
+
+
+    
+</body>
+</html>

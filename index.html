@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Floreria</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+           background-color:yellowgreen;
+        }
+        .titulo{
+            color: green;
+            font-size: 40px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .bienvenida{
+            text-align: center;
+            font-size: 20px;
+        }
+        .fotos{
+            display: flex;
+            justify-content: space-around;
+        }
+        .foto{
+            display: flex;
+            justify-content: space-around;
+            margin: 50px;
+        }
+        img{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+        .masVendidas{
+            text-align: center;
+        }
+        .masVendidas ul{
+            justify-content: space-around;
+        }
+        .masVendidas ul a{
+            text-decoration: none;
+            color: black;
+        }
+        .masVendidas ul :hover{
+            color: green;
+            cursor:pointer;
+        }
+        .contacto p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <h1 class="titulo" >Mi Florería</h1>
+        <p class="bienvenida">¡Bienvenido a nuestra florería! Aquí encontrarás las flores más hermosas y frescas para cualquier ocasión.</p>
+        <div class="foto" >
+            <img src="camelia.jpg" alt="Flores">
+            <img src="clavel.jpg" alt="Flores">
+            <img src="rosa.jpg" alt="Flores">
+            <img src="tulipan.jpg" alt="Flores" >
+        </div>
+        <div class="masVendidas">
+            
+                <p>Nuestras Flores mas Vendidas:</p>
+                <ul style="list-style: none;">
+                    <li><a href="rosa.html">Rosa</a></li>
+                    <li><a href="tulipan.html">Tulipán</a></li>
+                    <li><a href="clavel.html">Clavel</a></li>
+                    <li><a href="camelia.html">Camelia</a></li>
+                    <li><a href="girasol.html">Girasol</a></li>
+                    <li><a href="lila.html">Lila</a></li>
+                </ul>
+                <div style="text-align: right; ">
+                    <a style= " color: green; text-decoration:none;" href="pedidos.html">Pedidos
+                    </a>
+                </div>
+            
+        </div>
+        <div class="contacto">
+            <p>Teléfono: (0343) 32332333</p>
+            <p>Correo: floreria@flor.com.ar</p>
+        </div>
+</body>
+</html>

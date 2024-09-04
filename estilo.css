@@ -1,0 +1,108 @@
+*{
+    font-family: sans-serif;
+}
+
+nav{
+display: flex;
+justify-content:space-between;
+height: 30px;
+background-color: pink;
+padding-top: 15px;
+padding-left: 15px;
+padding-right: 15px;
+color: black;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.navFlor{
+    display: flex;
+    justify-content:flex-end;
+    height: 30px;
+    background-color: pink;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: black;
+}
+
+section{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.imgFlor{
+    height: 100px;
+}
+
+.info{
+    margin-top: 25px;
+    background-color: pink;
+    display: grid;
+    justify-items: center;
+    border-radius: 25px;
+}
+
+
+
+.contacto{
+    width: 450px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.telefono{
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid, 5px, white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.mail{
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid, 5px, white;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.info h2{
+    padding-top: 0;
+font-size: 30px;
+}
+
+.top h3{
+    padding-top: 0;
+    font-size: 30px;
+
+}
+
+.topSect{
+    margin-top: 30px;
+    
+    display: grid;
+    justify-items: center;
+
+}
+
+.top{
+    display: grid;
+    border-radius: 25px;
+    justify-items: center;
+    width: 500px;
+    border: solid, 10px, pink;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img{
+    height: 75px;
+
+}

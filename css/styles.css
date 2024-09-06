@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --color-black: #212121;
+    --color-white: #f3f3f3;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-white);
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    margin: 30px 0;
+}
+
+body{
+    background-color: var(--color-black);
+}
+
+.container{
+    width: 1024px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav > a{
+    padding: 5px;
+    transition: 0.3s;
+}
+nav > a:hover{
+    transform: scale(1.1);
+}
+
+.descripcion{
+    font-size: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    
+}
+header > nav{
+    display: flex;
+    gap: 10px;
+}
+
+.hero{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.contenedor-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    flex-basis: 30%;
+    text-align: center;
+    border-radius: 20px;
+    margin: 2%;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card > img{
+    border-radius: 20px;
+}
+
+
+
+.galeria > .button{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+    margin: 30px auto;
+}
+
+.galeria > .button:hover{
+    background-color: #212121;
+    color: var(--color-white);
+    box-shadow: 0 0 5px var(--color-white);
+    cursor: pointer;
+}
+
+.galeria > .button:hover > span {
+    color: var(--color-white);
+}
+
+.galeria > .button > span{
+    color: var(--color-black);
+}
+
+.mas-ventas{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.mas-ventas > ol{
+    margin: 0 auto;
+    
+}
+
+.mas-ventas > ol > li{
+    width: 100px;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+    border: solid 1px var(--color-white);
+    border-radius: 5px; 
+    transition: 0.3s;
+}
+
+.mas-ventas > ol > li:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--color-white);
+    cursor: pointer;
+}
+
+.contacto{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacto > .info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto > .info >.info-indiv > p {
+    margin: 0;
+}
+.contacto > .info >.info-indiv > h4 {
+    margin: 5px 0;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}

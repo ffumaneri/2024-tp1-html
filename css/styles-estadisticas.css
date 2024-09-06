@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --color-white: #f3f3f3;
+    --color-black: #212121;
+}
+
+*{
+    font-family: "Montserrat", sans-serif;;
+}
+
+body{
+    background-color: var(--color-black);
+    color: var(--color-white);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    border: solid 1px var(--color-white);
+    min-width: 1024px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 10px var(--color-white);
+    transition: 0.3s;
+}
+
+
+table:hover{
+}
+
+th, td{
+    border: solid 1px var(--color-white);
+    padding: 8px;
+}
+
+th{
+    font-size: 20px;
+}
+td{
+    font-size: 15px;
+}
+
+caption{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+
+.button{
+    background-color: var(--color-black);
+    border: solid 2px var(--color-white);
+    border-radius: 50%;
+    transition: 0.3s;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 3;
+}
+.button > span{
+    color: var(--color-white);
+    padding: 10px;
+}
+.button:hover{
+    transform: scale(1.1);
+    background-color: var(--color-white);
+}
+
+.button:hover > span{
+    color: var(--color-black);
+}

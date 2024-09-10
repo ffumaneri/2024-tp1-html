@@ -1,6 +1,13 @@
 *{
-    font-family: sans-serif;
+    font-family: sans-serif;    
 }
+
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
 
 nav{
 display: flex;
@@ -98,11 +105,70 @@ font-size: 30px;
 }
 
 footer{
+    
+    bottom: 0;  
+    background-color: pink;    
+    margin-top: 25px;
+    padding: 15px;
+    padding-bottom: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;      
 }
 
-footer img{
-    height: 75px;
+.infoF{
+    display: flex;
+}
 
+.infoP{
+    margin-top: 3px;    
+}
+
+.imgFlor{
+    height: 65px;
+}
+
+.imgF{
+    height: 24px;
+    margin-right: 5px;
+}
+
+table{
+    width: 100%;
+}
+
+table, th, td{    
+    border: 5px pink solid;
+    border-collapse: collapse;   
+}
+
+th{
+    padding: 5px;
+    background-color: rgb(245, 214, 220)
+}
+
+td{
+    padding: 5px;
+}
+
+.pedidoSec{
+    margin-bottom: 125px;
+}
+
+.formtr{
+    text-align: center;
+}
+
+.imagenFlor{
+    height: 500px;
+}
+
+.infoFlor{    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+
+.infoFlor p{
+    width: 750px;
 }

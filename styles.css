@@ -1,0 +1,63 @@
+body {
+  background-color: azure;
+  font-family: "Poppins", sans-serif;
+}
+
+div {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+h1 {
+  padding: 10px;
+  margin: 10px;
+}
+
+h2 {
+  padding: 5px;
+  margin: 5px;
+}
+
+li {
+  margin: 3px;
+  text-decoration: none;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  background-color: #D6EEEE;
+}
+
+footer {
+  text-align: center;
+  padding: 2%;
+  background-color: rgb(149, 173, 193);
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+form {
+  border: 1px solid black;
+  background-color: #D6EEEE;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+label, input, select {
+  margin: 4px;
+  padding: 4px;
+}
+

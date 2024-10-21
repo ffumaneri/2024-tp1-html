@@ -1,0 +1,233 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.25em;
+}
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: transparent;
+}
+
+button:hover {
+  background-color: rgb(8, 8, 8);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 48px;
+}
+
+#carouselExampleCaptions {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.carousel {
+  margin: 20px 0;
+}
+
+.carousel-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#list-flores-vendidas {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+#list-flores-vendidas .container {
+  padding: 150px 12px;
+}
+
+#list-flores-vendidas h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#list-flores-vendidas .flores {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.flores:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("Imagenes/lycoris-radiata.webp");
+}
+
+.flores:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("Imagenes/Camellia-japonica.jpg");
+}
+
+.flores:nth-child(3) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("Imagenes/Prunus-mume.jpg");
+}
+
+#botones-pedidos {
+  background-color: rgb(255, 255, 255);
+}
+
+#botones-pedidos .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#botones-pedidos .boton {
+  flex: auto; /* Permite que cada "flor" ocupe el mismo ancho */
+  max-width: 300px; /* Define un ancho máximo para las imágenes */
+}
+
+#botones-pedidos .list-botones {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Añade un espacio entre cada "flor" */
+  padding: 0;
+  margin: 0;
+  list-style: none; /* Elimina el estilo de lista predeterminado */
+}
+
+#botones-pedidos .boton button {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#botones-pedidos .boton button li {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: #4caf50;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+#botones-pedidos .boton button li:hover {
+  background-color: green;
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.formuEstilo {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+
+  max-width: 500px;
+  margin: 0 auto;
+
+  display: block;
+  margin-top: 10px;
+}
+
+.formuEstilo input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+.formuEstilo input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.formuEstilo input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.listaPedidos {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+.listaPedidos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.listaPedidos th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.listaPedidos th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.listaPedidos tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+.listaPedidos tr:hover {
+  background-color: #f5f5f5;
+}

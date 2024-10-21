@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario de Pedido</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body class="formuEstilo">
+    <h1>Formulario de Pedido</h1>
+
+    <form action="#" method="post">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" name="apellido" required />
+
+      <label for="tipoFlor">Tipo de flor:</label>
+      <select id="tipoFlor" name="tipoFlor" required>
+        <option value="">Seleccione una flor</option>
+        <option value="Lycoris">Lycoris Radiata</option>
+        <option value="Camellia">Camellia Japonica</option>
+        <option value="Ume">Prunus Mume</option>
+      </select>
+
+      <label for="descripcion">Descripción del pedido:</label>
+      <textarea
+        id="descripcion"
+        name="descripcion"
+        rows="4"
+        required
+      ></textarea>
+
+      <input type="submit" value="Enviar Pedido" />
+    </form>
+
+    <p><a href="floreria.html">Volver a la pagina principal</a></p>
+  </body>
+</html>

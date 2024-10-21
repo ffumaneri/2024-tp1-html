@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi floreria</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="titulo">Sakura no Hana</h1>
+    <p>
+      "Bienvenido a Sakura no Hana, una auténtica florería japonesa en el
+      corazón de la ciudad. Nuestro espacio combina la serenidad de un jardín
+      zen con la vibrante belleza de las flores más exquisitas. Nos
+      especializamos en el arte del Ikebana, el arreglo floral tradicional
+      japonés que busca la armonía entre la naturaleza y la creatividad humana.
+      Cada composición es una obra de arte única, diseñada para evocar la
+      esencia de las estaciones y la belleza efímera de la vida. Ofrecemos una
+      cuidadosa selección de flores y plantas nativas de Japón, como cerezos en
+      flor, crisantemos, peonías y orquídeas. También contamos con una variedad
+      de bonsáis y herramientas tradicionales para su cuidado. Nuestros
+      floristas expertos, formados en las escuelas más prestigiosas de Ikebana,
+      están disponibles para crear arreglos personalizados para cualquier
+      ocasión, desde una ceremonia de té hasta una boda tradicional japonesa.
+      Además de flores y plantas, ofrecemos una selección de cerámicas
+      artesanales, desde delicados jarrones hasta robustos contenedores para
+      bonsáis, todos elaborados por maestros alfareros japoneses. Visite Sakura
+      no Hana para sumergirse en la serena belleza de la cultura floral japonesa
+      y lleve un poco de esa tranquilidad a su hogar."
+    </p>
+
+    <p>Explora nuestra seccion de flores japonesas</p>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="Imagenes/lycoris-radiata.webp"
+            class="d-block w-100"
+            alt="Lycoris"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Lycoris</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="Imagenes/Camellia-japonica.jpg"
+            class="d-block w-100"
+            alt="Camellia"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Camellia</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Imagenes/Prunus-mume.jpg" class="d-block w-100" alt="Ume" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ume</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="list-flores-vendidas">
+      <div class="container">
+        <h2>Nuestras flores mas vendidas:</h2>
+        <ul>
+          <div class="flores">
+            <form action="Lycoris.html">
+              <button>
+                <li>Lycoris Radiata</li>
+              </button>
+            </form>
+          </div>
+          <div class="flores">
+            <form action="Camellia.html">
+              <button>
+                <li>Camellia Japonica</li>
+              </button>
+            </form>
+          </div>
+          <div class="flores">
+            <form action="Ume.html">
+              <button>
+                <li>Prunus Mume</li>
+              </button>
+            </form>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <section id="botones-pedidos">
+      <div class="container">
+        <ul class="list-botones">
+          <div class="boton">
+            <form action="Formulario.html">
+              <button>
+                <li>Realizar un pedido</li>
+              </button>
+            </form>
+          </div>
+
+          <div class="boton">
+            <form action="Pedidos.html">
+              <button>
+                <li>Ver listado de pedidos</li>
+              </button>
+            </form>
+          </div>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>(0343) 32332333 - floreria@flor.com.ar</p>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

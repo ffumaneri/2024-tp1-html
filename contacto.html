@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Pedido de Flor</h1>
+    </header>
+    
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+        
+        <label for="tipo_flor">Tipo de Flor:</label>
+        <select id="tipo_flor" name="tipo_flor" required>
+            <option value="rosa">Rosa</option>
+            <option value="girasol">Girasol</option>
+            <option value="tulipan">Tulipán</option>
+        </select>
+        
+        <label for="descripcion">Descripción del Pedido:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea>
+        
+        <button type="submit">Enviar Pedido</button>
+    </form>
+    
+    <a href="index.html">Volver a la página principal</a>
+</body>
+</html>

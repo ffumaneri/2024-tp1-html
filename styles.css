@@ -1,0 +1,130 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffdf80;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+}
+
+section {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+.detalle-flor img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.detalle-flor p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Botón de Volver */
+.btn-back {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #5a5aff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-back:hover {
+    background-color: #4d4dd4;
+}
+
+/* Lista de Flores en la Página Principal */
+.flores-vendidas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.flores-vendidas ul li a {
+    text-decoration: none;
+    color: #5a5aff;
+    font-weight: bold;
+}
+
+.flores-vendidas ul li a:hover {
+    color: #4d4dd4;
+}
+
+/* Estilo de Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea, form button {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #5a5aff;
+    color: #fff;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #4d4dd4;
+}
+
+/* Tabla de Pedidos */
+table {
+    width: 90%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ffdf80;
+    color: #333;
+}

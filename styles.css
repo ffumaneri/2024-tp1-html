@@ -1,0 +1,208 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos generales */
+body {
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1 {
+  color: #b03a2e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Título con fondo de imagen */
+.titulo-fondo {
+  background-image: url("imagenes/titulo-floreria.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.titulo-fondo h1 {
+  font-size: 2.5rem;
+  color: #b03a2e;
+  text-shadow: -1px -1px 0 #f8f8f8, 1px -1px 0 #f8f8f8, -1px 1px 0 #f8f8f8,
+    1px 1px 0 #f8f8f8, 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Secciones */
+section {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección de nuestras flores */
+.nuestras-flores h2 {
+  text-align: center;
+  color: #b03a2e;
+}
+
+.galeria-flores {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.galeria-flores div {
+  text-align: center;
+  width: 150px;
+}
+
+.galeria-flores img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria-flores img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección de Flores Más Vendidas */
+.flores-vendidas h2 {
+  text-align: center;
+  color: #b03a2e;
+}
+
+.flores-vendidas ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.flores-vendidas li {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.flores-vendidas li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.flores-vendidas a:hover {
+  color: #b03a2e;
+  text-decoration: underline;
+}
+
+/* Botones de acción */
+.botones-accion {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+/* Información de contacto */
+.contacto {
+  text-align: center;
+}
+
+/* Imágenes en descripción de flores */
+.img-flores {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+form input,
+form select,
+form textarea,
+form button {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.boton-enlace {
+  display: inline-block;
+  padding: 15px;
+  color: #fff;
+  background-color: #b03a2e;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+}
+
+.boton-enlace:hover {
+  background-color: #922b20;
+  transform: scale(1.02);
+}
+
+/* Tabla de pedidos */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Enlaces de navegación */
+
+.return-link {
+  color: #b03a2e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.return-link:hover {
+  color: #922b20;
+  text-decoration: underline;
+}

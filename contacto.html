@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pedido de Flores</title>
+    <script>
+      function mostrarAlerta(event) {
+        alert("En construcción");
+      }
+    </script>
+  </head>
+  <body>
+    <header class="titulo-fondo">
+      <h1>Mi Florería</h1>
+    </header>
+
+    <section>
+      <h1>Realizar un pedido</h1>
+      <form onsubmit="mostrarAlerta(event)">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required /><br />
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required /><br />
+
+        <label for="tipoFlor">Tipo de flor:</label>
+        <select id="tipoFlor" name="tipoFlor">
+          <option value="rosa">Rosa</option>
+          <option value="tulipan">Tulipán</option>
+          <option value="margarita">Margarita</option></select
+        ><br />
+
+        <label for="descripcion">Descripción del pedido:</label>
+        <textarea
+          id="descripcion"
+          name="descripcion"
+          rows="4"
+          required
+        ></textarea
+        ><br />
+
+        <button type="submit" class="boton-enlace">Enviar pedido</button>
+      </form>
+
+      <a href="index.html" class="return-link">Volver a la página principal</a>
+    </section>
+
+    <!-- Información de contacto -->
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <p>Teléfono: (0343) 32332333</p>
+      <p>Email: floreriapepona@flor.com.ar</p>
+    </section>
+  </body>
+</html>

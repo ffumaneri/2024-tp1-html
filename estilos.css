@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #F5FDC6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1, h3{
+    font-family: "Cormorant Infant", serif;
+    font-weight: 700;
+    color: #41521F;
+}
+
+h1{
+    font-size: 75px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #131313;
+}
+.section_tittle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section_tittle p{
+    width: 75%;
+}
+
+/* .section__img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #D0B17A;
+    padding: 20px 50px;
+    width: 85%;
+    border-radius: 10px;
+}
+
+.section__img img{
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+} */
+
+
+.section__galeria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 70px;
+    width: 85%;
+    /* background-color: #F5C396; */
+}
+.div__columna{
+    display: flex;
+    flex-direction: column;
+}
+.img__galeria{
+    width: 250px;
+    min-height: 250px;
+    object-fit: cover;
+    margin: 10px
+    
+}
+
+.section__list{
+    width: 85%;
+}
+
+.section__list ul{
+    list-style: none; 
+    padding: 0;           
+    display: flex;   
+    justify-content: center;      
+    gap: 20px;             
+    flex-wrap: wrap; 
+
+}
+.section__list li{
+    font-family: "Poppins", sans-serif; 
+    background-color: #f8f8f8; 
+    /* padding: 20px;              */
+    border-radius: 8px;      
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 300px;
+    height: 200px;          
+    max-width: 300px;          
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.section__list li a{
+    text-decoration: none;
+}
+
+.section__list li:hover{
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    transform:   scale(1.1);
+}
+
+.section__list li p{
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    opacity: 0.7;
+    text-shadow: 2px 2px #131313;
+}
+.imgRosas{
+    background-image: url(./img/rosas.jpg);
+    background-size: cover;
+}
+
+.imgTulipanes{
+    background-image: url(./img/tulipanes.jpg);
+    background-size: cover;
+}
+
+.imgLirios{
+    background-image: url(./img/lirios.jpg);
+    background-size: cover;
+}
+.imgMargaritas{
+    background-image: url(./img/margaritas.jpg);
+    background-size: cover;
+}
+.imgGirasoles{
+    background-image: url(./img/girasoles.jpg);
+    background-size: cover;
+}
+
+.imgOrquideas{
+    background-image: url(./img/orquidea.jpg);
+    background-size: cover;
+}
+
+footer{
+    background-color: #131313 ;
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+footer div{
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: space-evenly;
+}
+footer p{
+    color: white;
+}
+
+.iconoRedes{
+    width: 20px;
+}

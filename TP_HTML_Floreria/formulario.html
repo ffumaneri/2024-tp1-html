@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi floreria</title>
+    </head>
+    <body>
+        <h2>Formulario de contacto</h2>
+
+        <table>
+            <form id="form1">
+                <tr>
+                    <td><label for="name">Nombre</label></td>
+                    <td><input id="name" name="name" /><br></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Apellido</label></td>
+                    <td><input id="last_name" name="last_name" /><br></td>
+                </tr>
+                <tr>
+                    <td>Tipo de flor</td>
+                    <td><select name="tipo_flor">
+                        <option value="Rosas">Rosas</option>
+                        <option value="Tulipanes">Tulipanes</option>
+                        <option value="Orquídeas">Orquídeas</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="descripcion">Descripción del pedido</label></td>
+                    <td><textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea></td>
+                </tr>
+                <td><input id="boton" type="submit" value="Enviar"/></td>
+            </form>
+        </table>
+        
+        <script lang="javascript">
+            const form = document.querySelector("#form1")
+        form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const formData = new FormData(form);
+            if (formData.get("name") == ""){
+                alert("El nombre es obligatorio")
+                return
+            }
+            if (formData.get("last_name") == ""){
+                alert("El apellido es obligatorio")
+                return
+            }
+            alert("Datos ingresados: " +
+            formData.get("name") +" "+
+            formData.get("last_name") +" - "+
+            formData.get("tipo_flor") +" - "+
+            formData.get("descripcion"))
+        })
+        </script>
+    
+        <h2><a href="floreria.html">Volver</a></h2>
+    </body>
+</html>
